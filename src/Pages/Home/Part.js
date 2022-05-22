@@ -12,7 +12,7 @@ const Part = ({ part }) => {
                 <p> Minimum Quantity: {minimumQuantity}</p>
                 <p>{description}</p>
                 <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Purchase</button>
+                    <button class="btn btn-primary ">Purchase</button>
                 </div>
             </div>
         </div>

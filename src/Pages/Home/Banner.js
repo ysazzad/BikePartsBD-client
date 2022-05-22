@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div class="hero min-h-screen bg-base-200">
+        <div class="hero min-h-screen bg-base-100">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <img src="https://c8.alamy.com/comp/2AB98MC/set-spare-parts-of-motorcycle-on-the-wall-repair-and-maintenance-old-parts-2AB98MC.jpg" alt='bike' class="max-w-sm rounded-lg shadow-2xl" />
                 <div>

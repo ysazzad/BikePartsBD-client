@@ -8,7 +8,7 @@ module.exports = {
     themes: [
       {
         biketheme: {
-          primary: "#a991f7",
+          primary: "#f7b731",
           secondary: "#f6d860",
           accent: "#37cdbe",
           neutral: "#3d4451",
