@@ -3,7 +3,7 @@ import React from 'react';
 const Extra = () => {
     return (
         <div className='m-12'>
-            <div class="card w-full bg-base-100 shadow-xl bg-orange-400">
+            <div class="card w-full  shadow-xl bg-orange-400">
                 <div class="card-body">
                     <h2 class="card-title text-white">FIND PARTS FOR YOUR BIKE</h2>
                     <div className='grid grid-cols-5'>

@@ -1,0 +1,56 @@
+[
+    {
+        "_id": 1,
+        "name": "Dynojet Power Commander V",
+        "img": "https://www.motogm.com/1411-medium_default/dynojet-power-commander-v-for-ktm-690-sm-smc-09.jpg",
+        "description": "The Dynojet PCV adjusts your bike’s air/fuel mixture, resulting in more horsepower and torque with a smoother, more responsive throttle.",
+        "availableQuantity": "22",
+        "minimumQuantity": "10",
+        "perUnitPrice": "9000"
+    },
+    {
+        "_id": 2,
+        "name": "Acerbis X-Seat",
+        "img": "https://www.maciag-offroad.de/shop/artikelbilder/normal/16220/acerbis-sitzbank-seat-x-seat-1.jpg",
+        "description": "The Acerbis X-Seat is made entirely of one piece of foam and eliminates the need for a seat cover.",
+        "availableQuantity": "60",
+        "minimumQuantity": "30",
+        "perUnitPrice": "3000"
+    },
+    {
+        "_id": 3,
+        "name": "ASV C5 Sport Clutch Lever",
+        "img": "https://www.revzilla.com/product_images/0075/4550/crg_carbon_brake_lever_300x300.jpg",
+        "description": "All ASV Clutch Levers feature a CNC-machined 6061 billet aluminum construction with a unique design",
+        "availableQuantity": "100",
+        "minimumQuantity": "60",
+        "perUnitPrice": "400"
+    },
+    {
+        "_id": 4,
+        "name": "Akrapovic Slip-On Exhausts",
+        "img": "https://content.motosport.com/images/items/large/AKR/AKR000D/X001-Y211.jpg",
+        "description": "Rejuvenate your bike's sound and performance with this slip-on. It combines the latest in exhaust tech and Akrapovic's unmatched racing experience",
+        "availableQuantity": "40",
+        "minimumQuantity": "15",
+        "perUnitPrice": "10000"
+    },
+    {
+        "_id": 5,
+        "name": "Givi Windscreens",
+        "img": "https://www.carpimoto.com/Images/Products/Zoom/KTM_1050_1190_Adventure_Vetro_Windscreen_Givi_D7703ST.jpg",
+        "description": "Givi Windscreens are stylish, well-constructed replacement windscreens featuring improved aerodynamics, looks and top-notch quality.",
+        "availableQuantity": "27",
+        "minimumQuantity": "10",
+        "perUnitPrice": "900"
+    },
+    {
+        "_id": 6,
+        "name": "MFW Vario Rider Footpeg Mounts",
+        "img": "https://twistedthrottle.com/wp-content/uploads/2020/06/passenger_position1_3.jpg",
+        "description": "MFW's bike specific Vario Mounting Brackets allow you to use their indexed footpeg mounting system to displace your footpegs",
+        "availableQuantity": "120",
+        "minimumQuantity": "40",
+        "perUnitPrice": "400"
+    }
+]
