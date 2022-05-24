@@ -49,6 +49,7 @@ const PartDetails = () => {
             const booking = {
                 partId: part._id,
                 part: part.name,
+                price: part.perUnitPrice,
                 userName: user.displayName,
                 user: user.email,
                 phone: event.target.phone.value,
