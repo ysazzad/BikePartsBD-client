@@ -22,6 +22,7 @@ const Navbar = () => {
         <li>{user ? <button class="btn btn-ghost" onClick={logout}>Sign Out</button>
             : <NavLink to="/login">Login</NavLink>
         }</li>
+        {user && <li className='text-red-700 font-bold mt-2 font-mono text-xl'> {user.displayName}</li>}
 
 
 
