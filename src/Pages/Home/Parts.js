@@ -13,7 +13,7 @@ const Parts = () => {
             <h1 className='text-center text-5xl my-12 text-orange-500'>Motorcycle Parts</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 container mx-auto'>
                 {
-                    parts.map(part => <Part key={part._id} part={part}>
+                    parts.slice(-6).map(part => <Part key={part._id} part={part}>
 
                     </Part>)
                 }

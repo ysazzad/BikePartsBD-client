@@ -15,6 +15,18 @@ const Blog = () => {
                 </p>
             </div>
             <div>
+                <h1>How does prototypical inheritance work?</h1>
+                <p>Every object with its methods and properties contains an internal and hidden property known as Prototype. The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the Prototype of an object, we use Object.getPrototypeOf and Object.setPrototypeOf. Nowadays, in modern language, it is being set using __proto__</p>
+
+            </div>
+            <div>
+                <h1> Why you do not set the state directly in React.</h1>
+                <p>1.If you update it directly, calling the setState() afterward may just replace the update you made.
+                    2.When you directly update the state, it does not change this.state immediately. Instead, it creates a pending state transition, and accessing it after calling this method will only return the present value.
+                    3.You will lose control of the state across all components.
+                </p>
+            </div>
+            <div>
 
             </div>
 
