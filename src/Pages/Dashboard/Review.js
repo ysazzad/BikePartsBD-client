@@ -24,14 +24,16 @@ const Review = () => {
 
     return (
         <div>
-            <h2 className='text-4xl text-orange-500 text-center font-bold'>Reviews</h2>
-            <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
-                <input className='mb-4 input input-bordered w-full max-w-xs' placeholder='Name' {...register("userName", { required: true, maxLength: 500 })} />
-                <textarea className='mb-4 input input-bordered w-full max-w-xs' placeholder='Description' {...register("description")} />
-                <input className='mb-4 input input-bordered w-full max-w-xs' placeholder=' Rating' type="number" {...register("rating")} />
-                <input className='mb-4 input input-bordered w-full max-w-xs' placeholder='Photo' type="text" {...register("imgUrl")} />
-                <input type="submit" className='input input-bordered w-full max-w-xs bg-orange-500' value="Add Review" />
-            </form>
+            <h2 className='text-3xl text-warning ml-96 mt-8 font-bold'>Add Your Review</h2>
+            <div className='ml-96 mt-4'>
+                <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
+                    <input className='mb-4 input input-bordered w-full max-w-xs' placeholder='Name' {...register("userName", { required: true, maxLength: 500 })} />
+                    <textarea className='mb-4 input input-bordered w-full max-w-xs' placeholder='Description' {...register("description")} />
+                    <input className='mb-4 input input-bordered w-full max-w-xs' placeholder=' Rating' type="number" {...register("rating")} />
+                    <input className='mb-4 input input-bordered w-full max-w-xs' placeholder='Photo' type="text" {...register("imgUrl")} />
+                    <input type="submit" className='input input-bordered w-full max-w-xs bg-warning font-bold' value="Add Review" />
+                </form>
+            </div>
 
         </div>
     );

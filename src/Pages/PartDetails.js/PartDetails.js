@@ -9,7 +9,8 @@ const PartDetails = () => {
     const [part, setPart] = useState({})
     console.log(part);
     const [user, loading, error] = useAuthState(auth);
-    console.log(user);
+
+
 
     useEffect(() => {
         const url = `http://localhost:5000/part/${partId}`
@@ -89,7 +90,7 @@ const PartDetails = () => {
                         <form onSubmit={handleOrder} className='grid grid-cols-1 gap-3'>
                             <input type="text" name='name' disabled value={user?.displayName} class="input input-bordered w-full max-w-xs" />
                             <input type="email" name='email' disabled value={user?.email} class="input input-bordered w-full max-w-xs" />
-                            <input type="text" name='quantity' class="input input-bordered w-full max-w-xs" />
+                            <input type="text" name='quantity' placeholder='Quantity' class="input input-bordered w-full max-w-xs" />
 
                             <input type="text" name='phone' placeholder="Phone" class="input input-bordered w-full max-w-xs" />
                             <input type="text" name='address' placeholder="Address" class="input input-bordered w-full max-w-xs" />
