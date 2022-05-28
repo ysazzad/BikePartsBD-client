@@ -24,8 +24,8 @@ const Review = () => {
 
     return (
         <div>
-            <h2 className='text-3xl text-warning ml-96 mt-8 font-bold'>Add Your Review</h2>
-            <div className='ml-96 mt-4'>
+            <h2 className='text-3xl text-warning ml-12 lg:ml-96 mt-8 font-bold'>Add Your Review</h2>
+            <div className=' ml-12 lg:ml-96 mt-4'>
                 <form className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
                     <input className='mb-4 input input-bordered w-full max-w-xs' placeholder='Name' {...register("userName", { required: true, maxLength: 500 })} />
                     <textarea className='mb-4 input input-bordered w-full max-w-xs' placeholder='Description' {...register("description")} />

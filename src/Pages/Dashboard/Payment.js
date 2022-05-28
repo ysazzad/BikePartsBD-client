@@ -24,10 +24,10 @@ const Payment = () => {
         return <Loading></Loading>
     }
     return (
-        <div>
-            <div class="card w-96 bg-base-100 shadow-xl ">
+        <div className='flex justify-center items-center mt-8'>
+            <div class="card w-96  shadow-xl bg-green-100 ">
                 <div class="card-body">
-                    <p>Hi, {order.userName}</p>
+                    <p className='font-bold'>Hi, {order.userName}</p>
                     <h2 class="card-title text-orange-400">Pay for this {order.part}</h2>
                     <p> Per Unit Price : {order.price}</p>
 

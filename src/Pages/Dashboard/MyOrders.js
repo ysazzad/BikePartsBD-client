@@ -2,6 +2,7 @@ import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
@@ -33,9 +34,24 @@ const MyOrders = () => {
                 })
         }
     }, [user])
+    const handleDelete = id => {
+        fetch(`http://localhost:5000/booking/${id}`, {
+            method: "DELETE"
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.deletedCount) {
+                    console.log("deleted");
+                    const remaining = order.filter(item => item._id !== id)
+                    setOrder(remaining)
+                    toast.success("order deleted")
+
+                }
+            })
+    }
     return (
         <div>
-            <h2>My Orders : {order.length}</h2>
+            <h2 className='text-xl text-blue-500'>My Orders : {order.length}</h2>
             <div class="overflow-x-auto">
                 <table class="table w-full">
                     <thead>
@@ -46,6 +62,7 @@ const MyOrders = () => {
                             <th> Email</th>
                             <th> Per Unit Price</th>
                             <th> Payment</th>
+                            <th> Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -62,6 +79,11 @@ const MyOrders = () => {
                                         <p className="text-success" >Paid</p>
                                         <p className="text-success" >{o.transactionId}</p>
                                     </div>}
+
+                                </td>
+                                <td>
+                                    {!o.paid && <button onClick={() => handleDelete(o._id)} className='btn btn-xs btn-error'>Delete</button>
+                                    }
                                 </td>
                             </tr>)
                         }

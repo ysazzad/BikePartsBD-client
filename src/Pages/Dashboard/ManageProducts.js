@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ManageCard from './ManageCard';
+
 
 const ManageProducts = () => {
+    const [parts, setParts] = useState([])
+    useEffect(() => {
+        fetch(`http://localhost:5000/part`)
+            .then(res => res.json())
+            .then(data => setParts(data))
+    }, [])
     return (
         <div>
-            <h1>Manage Products</h1>
+            <h1 className='text-center text-4xl  text-orange-500'>Motorcycle All Parts</h1>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 container mx-auto '>
+                {
+                    parts.map(part => <ManageCard key={part._id} part={part}>
+
+                    </ManageCard>)
+                }
+            </div>
         </div>
     );
 };

@@ -24,6 +24,8 @@ import ManageAllOrders from './Pages/Dashboard/ManageAllOrders';
 import Profile from './Pages/Dashboard/Profile';
 import Payment from './Pages/Dashboard/Payment';
 import Portfolio from './Pages/Portfolio/Portfolio';
+import ShowProfile from './Pages/Dashboard/ShowProfile';
+import HomeDashboard from './Pages/Dashboard/HomeDashboard';
 
 function App() {
   return (
@@ -42,7 +44,9 @@ function App() {
             <Dashboard></Dashboard>
           </RequireAuth>
         }>
-          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route index element={<HomeDashboard></HomeDashboard>}></Route>
+          {/* <Route index element={<MyOrders></MyOrders>}></Route> */}
+          <Route path='order' element={<MyOrders></MyOrders>}></Route>
           <Route path='review' element={<Review></Review>}></Route>
           <Route path='payment/:id' element={<Payment></Payment>}></Route>
           <Route path='profile' element={<Profile></Profile>}></Route>

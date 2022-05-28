@@ -6,10 +6,9 @@ import { VscFeedback } from "react-icons/vsc";
 const Summary = () => {
     return (
         <div>
-            <h1 className='text-center text-4xl text-orange-500'>Millions Business Trust Us</h1>
-            <h3 className='text-center text-2xl text-orange-400'>Try To Understand Users Expectation</h3>
+            <h1 className='text-center text-5xl mt-12 text-orange-400'>Millions Business Trust Us</h1>
             <div className='text-center my-12 '>
-                <div class="stats shadow">
+                <div class="stats shadow bg-yellow-100">
                     <div class="stat">
                         <div class="stat-figure text-pink-500 text-6xl">
                             <FaUsers />

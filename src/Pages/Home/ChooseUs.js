@@ -3,7 +3,7 @@ import React from 'react';
 const ChooseUs = () => {
     return (
         <div className='container mx-auto'>
-            <h1 className='text-center text-5xl my-12 text-orange-600'>Why Choose Us</h1>
+            <h1 className='text-center text-5xl my-12 text-orange-400'>Why Choose Us</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 <div className='border-2'>
                     <img className='w-32 ml-36' src="https://cdn-icons-png.flaticon.com/512/3090/3090070.png" alt="" />
