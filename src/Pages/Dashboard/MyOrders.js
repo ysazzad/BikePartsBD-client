@@ -13,7 +13,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/booking?user=${user.email}`, {
+            fetch(`https://serene-ocean-37189.herokuapp.com/booking?user=${user.email}`, {
                 method: "GET",
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -35,7 +35,7 @@ const MyOrders = () => {
         }
     }, [user])
     const handleDelete = id => {
-        fetch(`http://localhost:5000/booking/${id}`, {
+        fetch(`https://serene-ocean-37189.herokuapp.com/booking/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

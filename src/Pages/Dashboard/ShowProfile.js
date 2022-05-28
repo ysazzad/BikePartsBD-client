@@ -7,7 +7,7 @@ const ShowProfile = () => {
     const [part, setPart] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:5000/profile/${profileId}`
+        const url = `https://serene-ocean-37189.herokuapp.com/profile/${profileId}`
         console.log(url);
         fetch(url)
             .then(res => res.json())

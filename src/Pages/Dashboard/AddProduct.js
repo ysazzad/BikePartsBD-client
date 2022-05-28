@@ -9,7 +9,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = "http://localhost:5000/part"
+        const url = "https://serene-ocean-37189.herokuapp.com/part"
         console.log(url)
         fetch(url, {
             method: 'POST',

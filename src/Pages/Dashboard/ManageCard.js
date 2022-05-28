@@ -10,7 +10,7 @@ const ManageCard = ({ part }) => {
         // console.log(id);
         const proceed = window.confirm("are you sure want to delete?")
         if (proceed) {
-            const url = `http://localhost:5000/part/${id}`
+            const url = `https://serene-ocean-37189.herokuapp.com/part/${id}`
             console.log(url);
             fetch(url, {
                 method: "DELETE"

@@ -7,7 +7,7 @@ const Review = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = "http://localhost:5000/review"
+        const url = "https://serene-ocean-37189.herokuapp.com/review"
         console.log(url)
         fetch(url, {
             method: 'POST',
