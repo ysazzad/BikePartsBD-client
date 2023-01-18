@@ -7,7 +7,7 @@ const Review = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = "https://serene-ocean-37189.herokuapp.com/review"
+        const url = "https://motorbike-parts-manufacturar-server.vercel.app/review"
         console.log(url)
         fetch(url, {
             method: 'POST',

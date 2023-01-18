@@ -13,7 +13,7 @@ const PartDetails = () => {
 
 
     useEffect(() => {
-        const url = `https://serene-ocean-37189.herokuapp.com/part/${partId}`
+        const url = `https://motorbike-parts-manufacturar-server.vercel.app/part/${partId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setPart(data))
@@ -55,7 +55,7 @@ const PartDetails = () => {
                 phone: event.target.phone.value,
                 address: event.target.address.value
             }
-            fetch(`https://serene-ocean-37189.herokuapp.com/booking`, {
+            fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking`, {
                 method: "POST",
                 headers: {
                     'content-type': 'application/json'

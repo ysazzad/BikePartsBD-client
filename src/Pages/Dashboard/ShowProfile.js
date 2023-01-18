@@ -7,7 +7,7 @@ const ShowProfile = () => {
     const [part, setPart] = useState({})
 
     useEffect(() => {
-        const url = `https://serene-ocean-37189.herokuapp.com/profile/${profileId}`
+        const url = `https://motorbike-parts-manufacturar-server.vercel.app/profile/${profileId}`
         console.log(url);
         fetch(url)
             .then(res => res.json())

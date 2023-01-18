@@ -5,7 +5,7 @@ import ReviewDetail from './ReviewDetail';
 const AllReview = () => {
     const [reviews, setReviews] = useState([])
     useEffect(() => {
-        fetch(`https://serene-ocean-37189.herokuapp.com/review`)
+        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/review`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

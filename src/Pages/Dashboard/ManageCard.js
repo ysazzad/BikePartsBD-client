@@ -10,7 +10,7 @@ const ManageCard = ({ part }) => {
         // console.log(id);
         const proceed = window.confirm("are you sure want to delete?")
         if (proceed) {
-            const url = `https://serene-ocean-37189.herokuapp.com/part/${id}`
+            const url = `https://motorbike-parts-manufacturar-server.vercel.app/part/${id}`
             console.log(url);
             fetch(url, {
                 method: "DELETE"

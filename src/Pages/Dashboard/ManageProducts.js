@@ -5,7 +5,7 @@ import ManageCard from './ManageCard';
 const ManageProducts = () => {
     const [parts, setParts] = useState([])
     useEffect(() => {
-        fetch(`https://serene-ocean-37189.herokuapp.com/part`)
+        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/part`)
             .then(res => res.json())
             .then(data => setParts(data))
     }, [])

@@ -13,7 +13,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://serene-ocean-37189.herokuapp.com/booking?user=${user.email}`, {
+            fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking?user=${user.email}`, {
                 method: "GET",
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -35,7 +35,7 @@ const MyOrders = () => {
         }
     }, [user])
     const handleDelete = id => {
-        fetch(`https://serene-ocean-37189.herokuapp.com/booking/${id}`, {
+        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

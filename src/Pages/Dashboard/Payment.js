@@ -11,7 +11,7 @@ const stripePromise = loadStripe('pk_test_51L1oNcD3zB0PToYODcuViaPXvCiqOaa8YbYGN
 
 const Payment = () => {
     const { id } = useParams()
-    const url = `https://serene-ocean-37189.herokuapp.com/booking/${id}`;
+    const url = `https://motorbike-parts-manufacturar-server.vercel.app/booking/${id}`;
 
     const { data: order, isLoading } = useQuery(['booking', id], () => fetch(url, {
         method: 'GET',

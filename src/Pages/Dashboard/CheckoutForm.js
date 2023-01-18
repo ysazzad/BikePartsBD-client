@@ -13,7 +13,7 @@ const CheckoutForm = ({ order }) => {
     const { _id, price, user, userName } = order
 
     useEffect(() => {
-        fetch('https://serene-ocean-37189.herokuapp.com/create-payment-intent', {
+        fetch('https://motorbike-parts-manufacturar-server.vercel.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -76,7 +76,7 @@ const CheckoutForm = ({ order }) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://serene-ocean-37189.herokuapp.com/booking/${_id}`, {
+            fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

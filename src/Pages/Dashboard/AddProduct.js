@@ -9,7 +9,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = "https://serene-ocean-37189.herokuapp.com/part"
+        const url = "https://motorbike-parts-manufacturar-server.vercel.app/part"
         console.log(url)
         fetch(url, {
             method: 'POST',
