@@ -4,7 +4,7 @@ import Part from './Part';
 const Parts = () => {
     const [parts, setParts] = useState([])
     useEffect(() => {
-        fetch(` https://motorcycle-parts-bd.onrender.com/part `)
+        fetch(` https://motorcycle-parts-bd.onrender.com/part`)
             .then(res => res.json())
             .then(data => setParts(data))
     }, [])
