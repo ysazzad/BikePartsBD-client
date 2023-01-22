@@ -7,7 +7,7 @@ const Review = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = "https://motorbike-parts-manufacturar-server.vercel.app/review"
+        const url = " https://motorcycle-parts-bd.onrender.com/review"
         console.log(url)
         fetch(url, {
             method: 'POST',

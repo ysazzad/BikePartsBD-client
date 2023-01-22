@@ -13,7 +13,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking?user=${user.email}`, {
+            fetch(` https://motorcycle-parts-bd.onrender.com/booking?user=${user.email}`, {
                 method: "GET",
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -35,7 +35,7 @@ const MyOrders = () => {
         }
     }, [user])
     const handleDelete = id => {
-        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking/${id}`, {
+        fetch(` https://motorcycle-parts-bd.onrender.com/booking/${id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

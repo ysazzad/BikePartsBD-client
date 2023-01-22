@@ -11,7 +11,7 @@ const Profile = () => {
     console.log(user);
 
 
-    const url = `https://motorbike-parts-manufacturar-server.vercel.app/profile?email=${user.email}`;
+    const url = ` https://motorcycle-parts-bd.onrender.com/profile?email=${user.email}`;
 
     const { data: userProfile, isLoading, refetch } = useQuery(['user'], () => fetch(url, {
         method: 'GET',
@@ -33,7 +33,7 @@ const Profile = () => {
         const phone = event.target.phone.value
         const city = event.target.city.value
         const profile = { education, linkedin, phone, city }
-        const url = `https://motorbike-parts-manufacturar-server.vercel.app/profile/${user.email}`;
+        const url = ` https://motorcycle-parts-bd.onrender.com/profile/${user.email}`;
         fetch(url, {
             method: 'PUT',
             headers: {

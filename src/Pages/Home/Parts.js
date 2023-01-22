@@ -4,7 +4,7 @@ import Part from './Part';
 const Parts = () => {
     const [parts, setParts] = useState([])
     useEffect(() => {
-        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/part`, { mode: "no-cors" })
+        fetch(` https://motorcycle-parts-bd.onrender.com/part `)
             .then(res => res.json())
             .then(data => setParts(data))
     }, [])

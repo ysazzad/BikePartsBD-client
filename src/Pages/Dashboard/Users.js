@@ -4,7 +4,7 @@
 // import UserRow from './UserRow';
 
 // const Users = () => {
-//     const { data: users, isLoading, refetch } = useQuery('users', () => fetch(`https://motorbike-parts-manufacturar-server.vercel.app/user`, {
+//     const { data: users, isLoading, refetch } = useQuery('users', () => fetch(` https://motorcycle-parts-bd.onrender.com/user`, {
 //         method: "GET",
 //         headers: {
 //             'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -49,7 +49,7 @@ import Loading from '../Shared/Loading';
 import UserRow from './UserRow';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('users', () => fetch(`https://motorbike-parts-manufacturar-server.vercel.app/user`, {
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch(` https://motorcycle-parts-bd.onrender.com/user`, {
         method: "GET",
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`

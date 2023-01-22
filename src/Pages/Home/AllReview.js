@@ -5,7 +5,7 @@ import ReviewDetail from './ReviewDetail';
 const AllReview = () => {
     const [reviews, setReviews] = useState([])
     useEffect(() => {
-        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/review`)
+        fetch(` https://motorcycle-parts-bd.onrender.com/review`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

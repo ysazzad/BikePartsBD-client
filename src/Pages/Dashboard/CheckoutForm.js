@@ -13,7 +13,7 @@ const CheckoutForm = ({ order }) => {
     const { _id, price, user, userName } = order
 
     useEffect(() => {
-        fetch('https://motorbike-parts-manufacturar-server.vercel.app/create-payment-intent', {
+        fetch(' https://motorcycle-parts-bd.onrender.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -76,7 +76,7 @@ const CheckoutForm = ({ order }) => {
                 order: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://motorbike-parts-manufacturar-server.vercel.app/booking/${_id}`, {
+            fetch(` https://motorcycle-parts-bd.onrender.com/booking/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

@@ -5,7 +5,7 @@ import ManageCard from './ManageCard';
 const ManageProducts = () => {
     const [parts, setParts] = useState([])
     useEffect(() => {
-        fetch(`https://motorbike-parts-manufacturar-server.vercel.app/part`)
+        fetch(` https://motorcycle-parts-bd.onrender.com/part`)
             .then(res => res.json())
             .then(data => setParts(data))
     }, [])

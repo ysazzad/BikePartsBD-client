@@ -10,7 +10,7 @@ const ManageCard = ({ part }) => {
         // console.log(id);
         const proceed = window.confirm("are you sure want to delete?")
         if (proceed) {
-            const url = `https://motorbike-parts-manufacturar-server.vercel.app/part/${id}`
+            const url = ` https://motorcycle-parts-bd.onrender.com/part/${id}`
             console.log(url);
             fetch(url, {
                 method: "DELETE"

@@ -9,7 +9,7 @@ const AddProduct = () => {
 
     const onSubmit = data => {
         console.log(data);
-        const url = "https://motorbike-parts-manufacturar-server.vercel.app/part"
+        const url = " https://motorcycle-parts-bd.onrender.com/part"
         console.log(url)
         fetch(url, {
             method: 'POST',

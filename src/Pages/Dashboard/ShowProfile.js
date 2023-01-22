@@ -7,7 +7,7 @@ const ShowProfile = () => {
     const [part, setPart] = useState({})
 
     useEffect(() => {
-        const url = `https://motorbike-parts-manufacturar-server.vercel.app/profile/${profileId}`
+        const url = ` https://motorcycle-parts-bd.onrender.com/profile/${profileId}`
         console.log(url);
         fetch(url)
             .then(res => res.json())

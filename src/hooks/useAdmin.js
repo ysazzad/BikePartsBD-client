@@ -6,7 +6,7 @@ const useAdmin = user => {
     useEffect(() => {
         const email = user?.email;
         if (email) {
-            fetch(`https://motorbike-parts-manufacturar-server.vercel.app/admin/${email}`, {
+            fetch(` https://motorcycle-parts-bd.onrender.com/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json',
